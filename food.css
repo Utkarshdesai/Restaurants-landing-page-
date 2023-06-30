@@ -1,0 +1,144 @@
+*{
+    padding: 0;margin: 0; box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+    "h n"
+    "l p";
+    background-color: antiquewhite;
+
+}
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    grid-area: h;
+    padding-left: 5% ;
+    padding-top: 10px;
+  
+    font-size:2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+span{
+    color: brown;
+}
+
+
+.nav {
+   
+    grid-area: n;
+    display: flex;
+    justify-content: space-around;
+    padding: 17px 20px;
+    font-family: sans-serif;
+}
+.nav a:last-child {
+    background-color: brown;
+    color: white;
+    border-radius: 8px;
+
+   padding-right: 10px;
+   
+   padding-left: 10px;
+}
+ 
+ 
+
+
+.left-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    grid-area: l;
+padding-left: 5%;
+padding-right: 5%;
+
+
+  
+}
+.right-section{
+    display: flex;
+    justify-content: center;
+    grid-area: p;
+    
+   
+     
+}
+img{
+    width: 80%;
+    padding: 5%;
+    box-shadow: 5px 5xp 200px black;
+
+    
+}
+p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  word-spacing: 2px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+h1{
+margin-top: 2%;
+margin-bottom: 2%;
+font-size: 2.5em;
+word-spacing: 2px;
+font-family: sans-serif;
+font-weight: bolder;
+letter-spacing: 2px; 
+
+
+}
+.foot{
+    display: flex;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+ 
+}
+.offer{
+ margin-left: 5%;
+}
+.left-section a:first-child{
+ background-color: brown;
+ color: white;
+ padding: 10px;
+ margin-right: 10px;
+ border-radius: 5px;
+}
+.left-section a:last-child{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+   }
+@media screen and(max-width:768) 
+{
+  .nav
+  {  font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+  }  
+  .wrapper{
+    border-color: blue;
+  }
+}
+@media screen and (max-width:640)
+{
+
+}
+
